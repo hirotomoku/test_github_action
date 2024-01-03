@@ -10,8 +10,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Check delectory
-        run: ls -la
+        run : ls -la
       - name: Python Setup
         uses: actions/setup-python@v1
         with:
           python-version: 3.x
+      - name: Check python version
+        run : python --version 
