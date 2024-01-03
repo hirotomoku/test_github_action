@@ -17,3 +17,7 @@ jobs:
           python-version: 3.x
       - name: Check python version
         run : python --version 
+      - name: install ruff
+        run : pip install ruff==0.1.9
+      - name: check ruff version
+        run : ruff --version
